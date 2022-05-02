@@ -16,9 +16,9 @@ slideRightMobile.onclick = function () {
 slideLeftMobile.onclick = function () {
     document.getElementById('sliderView').scrollLeft -= 220;
 };
-function myfun() {
     var element = document.getElementById('overlay');
     var element_two = document.querySelector('.slider-popup')
+function myfun() {
     console.log(element_two)
     element.classList.add("active");
     element_two.classList.add("active");
@@ -28,5 +28,11 @@ function return_menu() {
     var element_two = document.querySelector('.slider-popup')
     element.classList.remove("active");
     element_two.classList.remove("active");
+}
+const burgerMenu = document.getElementById('burgerLogo');
+
+burgerMenu.onclick = function () {
+    document.querySelector('.burger').classList.add('active');
+    element.classList.add("active");
 }
 

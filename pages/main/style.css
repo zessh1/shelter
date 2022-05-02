@@ -16,10 +16,19 @@ div{
     display: none;
 }
 .burger{
+    position: fixed;
+    height: 100%;
     width: 320px;
     background-color: #292929;
+    right: -330px;
+    z-index: 5;
+}
+.burger.active{
+    right: 0;
 }
 .burger-menu{
+    display: flex;
+    flex-direction: column;
     margin-top: 150px;
 }
 .burger-menu-links{
