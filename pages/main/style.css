@@ -4,16 +4,31 @@ body{
 div{
     box-sizing: border-box;
 }
+.footer-locations {
+    margin-top: 38px;
+}
+.burger-logo-exit {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 53px;
+}
+.burger-exit-menu {
+    transform: rotate(90deg);
+}
 .subtitile {
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
     color: #FFFFFF;
 }
+.burger-subtitle {
+    margin-left: 12px;
+}
 .burger-logo{
     display: none;
+    margin-left: auto;
 }
 .burger{
     position: fixed;
@@ -81,7 +96,15 @@ header{
 .Title {
     color: #F1CDB3;
     font-size: 32px;
-    font-family: Georgia;
+    font-family: Georgia, serif;
+
+}
+.burger-Title {
+    color: #F1CDB3;
+    font-size: 32px;
+    font-family: Georgia, serif;
+    margin-top: 30px;
+    margin-left: 10px;
 
 }
 nav a {
@@ -141,7 +164,7 @@ nav a {
 }
 .subheading {
     color: #4C4C4C;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -203,12 +226,13 @@ nav a {
     display: flex;
     align-items: center;
 
+
 }
 .footer_contacts img {
     padding-right: 20px;
 }
 h2 {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
@@ -221,21 +245,21 @@ h2 {
     color: #CDCDCD;
 }
 h3 {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
 }
 h4 {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
 }
 h5 {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -390,7 +414,7 @@ h5 {
     margin-bottom: 0;
 }
 .pet-origin {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -409,6 +433,9 @@ h5 {
 }
 .footer_h3 {
     color: #FFFFFF;
+}
+.del-a-affects {
+    text-decoration: none;
 }
 .footer_h4 {
     color: #F1CDB3;
@@ -543,14 +570,12 @@ h5 {
     .footer_box{
         margin: 0;
     }
+
 }
 @media only screen and (max-width: 450px) {
     .help-links {
         display: grid;
         grid-template-columns: 50% 50%;
-    }
-    .header {
-        flex-direction: column;
     }
     nav {
         display: none;
@@ -564,7 +589,7 @@ h5 {
         height: 296px;
     }
     .content-title {
-        font-family: 'Georgia';
+        font-family: 'Georgia', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
@@ -573,7 +598,7 @@ h5 {
 
     }
     .content-text {
-        font-family: 'Arial';
+        font-family: 'Arial', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -589,7 +614,7 @@ h5 {
         margin-top: 105px;
     }
     .about-title {
-        font-family: 'Georgia';
+        font-family: 'Georgia', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
@@ -612,7 +637,7 @@ h5 {
         height: 353.6px;
     }
     .donation-title {
-        font-family: 'Georgia';
+        font-family: 'Georgia', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
@@ -637,7 +662,7 @@ h5 {
         padding-right: 10px;
     }
     .footer_h3 {
-        font-family: 'Georgia';
+        font-family: 'Georgia', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
