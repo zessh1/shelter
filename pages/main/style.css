@@ -1,11 +1,92 @@
 body{
     margin:0;
 }
+footer {
+    background-image: url("../../assets/images/footer-gradient-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_flex {
+    display: flex;
+    margin-top: 16px;
+
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url("../../assets/fonts/Georgia.ttf");
+
+}
+@font-face {
+    font-family: Arial;
+    src: url("../../assets/fonts/arial.ttf");
+}
+.donation-text {
+    color: #B2B2B2;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.shelter_elements:nth-child(6) {
+    margin-left: 171px;
+    margin-top: 55px;
+    white-space: nowrap;
+
+}
+.shelter_elements:nth-child(7) {
+    margin-top: 55px;
+    margin-left: 180px;
+    white-space: nowrap;
+
+}
+.shelter_elements:nth-child(8) {
+    margin-left: 250px;
+    margin-top: 55px;
+    white-space: nowrap;
+  }
+
+.shelter_elements:nth-child(9) {
+    margin-left: 270px;
+    margin-top: 55px;
+    white-space: nowrap;
+
+}
+
+.donation-subhead {
+    color: #545454;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    margin-top: 20px;
+}
+.shelter-cards-names {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 30px;
+    line-height: 115%;
+}
+.about-title {
+    color: #545454;
+    letter-spacing: 0.06em;
+}
 div{
     box-sizing: border-box;
 }
+.background-grey {
+    background-color: #F6F6F6
+}
+
+.logo-gradient {
+    background-image: url("../../assets/images/start-screen-gradient-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .footer-locations {
-    margin-top: 38px;
+    margin-top: 40px;
 }
 .burger-logo-exit {
     display: flex;
@@ -16,12 +97,13 @@ div{
     transform: rotate(90deg);
 }
 .subtitile {
-    font-family: 'Arial', serif;
+    font-family: Arial;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
     color: #FFFFFF;
+    letter-spacing: 0.1em;
 }
 .burger-subtitle {
     margin-left: 12px;
@@ -47,10 +129,15 @@ div{
     margin-top: 150px;
 }
 .burger-menu-links{
+    font-family: Arial;
+    font-style: normal;
     font-size: 32px;
     color:#FAFAFA;
     text-align: center;
     margin-bottom: 40px;
+    text-decoration: none;
+    color: #CDCDCD;
+    margin-left: 35px;
 }
 header{
     position: fixed;
@@ -87,6 +174,7 @@ header{
     align-items: center;
     padding-right: 40px;
     padding-left: 40px;
+    padding-top: 60px;
 }
 .donation-dog-img{
     max-width: 505px;
@@ -96,21 +184,19 @@ header{
 .Title {
     color: #F1CDB3;
     font-size: 32px;
-    font-family: Georgia, serif;
+    font-family: Georgia;
 
 }
 .burger-Title {
     color: #F1CDB3;
     font-size: 32px;
-    font-family: Georgia, serif;
+    font-family: Georgia;
     margin-top: 30px;
     margin-left: 10px;
 
 }
 nav a {
-    text-decoration: none;
-    color: #CDCDCD;
-    margin-left: 35px;
+
 }
 .btn{
     display: flex;
@@ -118,36 +204,54 @@ nav a {
     justify-content: center;
     border-radius: 50%;
     border:2px solid #F1CDB3;
+    cursor: pointer;
+}
+.start-burger-menu {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-decoration: none;
+    color: #CDCDCD;
+    margin-left: 35px;
+}
+.start-burger-menu:hover {
+    color: #FFFFFF;
 }
 .btn:hover{
     background-color: #F1CDB3;
+
 }
-.nav_menu_link {
+.nav_menu_start_link {
     color: #FAFAFA;
+    opacity: 1;
+    padding-bottom: 1px;
+    border-bottom: 3px #F1CDB3 solid;
 }
 .start_screen {
     display: flex;
     justify-content: space-between;
     padding-right: 40px;
     padding-left: 40px;
-    background-image: linear-gradient(to top left, #262425,#5B483A);
     padding-top: 106px;
 }
 .make_friend_button {
     width: 207px;
     height: 52px;
     border-radius: 100px;
-    gap: 10px;
     padding: 15px 45px 15px 45px;
     background-color: #F1CDB3;
+    border: #F1CDB3;
+    margin-top: 42px;
 }
 .about {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 80px;
     margin-right: 40px;
     margin-left: 40px;
+    margin-bottom: 100px;
 }
 
 .content {
@@ -164,26 +268,35 @@ nav a {
 }
 .subheading {
     color: #4C4C4C;
-    font-family: 'Arial', serif;
+    font-family: Arial;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 0;
     line-height: 160%;
 }
 .about-img{
     object-fit: cover;
     height: 408px;
+    margin-top: 80px;
 }
 .donation {
     padding-top: 80px;
     padding-bottom: 100px;
-    background-color: #F6F6F6;
+
     display: flex;
     justify-content: center;
 }
 .donation-account {
     text-decoration: none;
     color: #545454;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 .donation-docs {
     margin-left:30px;
@@ -199,29 +312,36 @@ nav a {
 .credit_card {
     margin-top: 20px;
     display: flex;
+    padding: 10px 10px 15px 15px;
     border-radius: 9px;
     background-color: #F1CDB3;
     align-items: center;
+    max-width: 350px;
 
 }
-.help-title {
+.help-title-box {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.help-title {
+    max-width: 308px;
+    text-align: center;
     padding-top: 80px;
-    margin-bottom: 60px
+    margin-bottom: 60px;
+    color: #545454;
 }
 .help-links {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-bottom: 100px;
 }
 .help-images {
     width: 60px;
     height: 60px
 }
-.footer-flex {
-    background-image: linear-gradient(to left,#262425,#5B483A);
 
-}
 .footer_contacts {
     display: flex;
     align-items: center;
@@ -232,42 +352,50 @@ nav a {
     padding-right: 20px;
 }
 h2 {
-    font-family: 'Georgia', serif;
+    font-family: Georgia;
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
+    margin: 0;
 }
 .content-title {
     color: #FFFFFF;
 }
 .content-text {
     color: #CDCDCD;
+    margin-top: 42px;
+    margin-bottom: 0;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
 }
 h3 {
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
+    margin: 0;
 }
 h4 {
-    font-family: 'Georgia', serif;
+    font-family: Georgia;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
+    margin: 0;
 }
 h5 {
-    font-family: 'Georgia', serif;
+    font-family: Georgia;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 110%;
-}
-.footer_flex {
-    display: flex;
-
+    margin: 0;
 }
 .footer_box {
     margin-right: 160px;
@@ -276,27 +404,30 @@ h5 {
     display: flex;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 40px;
 }
 
 .footer-puppy {
     max-width: 300px;
     width: 100%;
     height: 310px;
-    margin-top: 40px
 }
-.slider-title {
+.slider-title-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-top: 80px;
     margin-right: 40px;
     margin-left: 40px;
 }
-.slider-part {
-    background-color:  #F6F6F6;
-
+.slider-title {
+    max-width: 400px;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 60px;
+    letter-spacing: 0.06em;
+    color: #545454;
 }
+
 .slider{
     width: 100%;
     padding-right: 40px;
@@ -346,13 +477,27 @@ h5 {
     margin-right: 0;
 }
 .slider-view-name{
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    line-height: 23px;
+    color: #545454;
     margin: 30px 0;
 }
 .learn-more{
+    margin-bottom: 30px;
+    font-size: 17px;
     padding: 15px 45px;
     color:#292929;
     background-color: #FAFAFA;
     border-radius: 100px;
+    letter-spacing: 0.06em;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.1px;
 }
 .slider-view:hover .learn-more{
     background-color: #F1CDB3;
@@ -365,6 +510,7 @@ h5 {
     background-color: #F1CDB3;
     font-size: 17px;
     border:2px solid #F1CDB3;
+    cursor: pointer;
 }
 .button-box {
     display: flex;
@@ -384,6 +530,7 @@ h5 {
     position: absolute;
     right: -52px;
     top: -52px;
+    cursor: pointer;
 }
 .slider-popup{
     display: none;
@@ -414,7 +561,7 @@ h5 {
     margin-bottom: 0;
 }
 .pet-origin {
-    font-family: 'Georgia', serif;
+    font-family: Georgia;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -422,7 +569,7 @@ h5 {
     margin-top: 10px;
     margin-bottom: 0;
 }
-.pet-desc {
+.pet-descr {
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -439,22 +586,79 @@ h5 {
 }
 .footer_h4 {
     color: #F1CDB3;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 .donation-title {
     color: #545454;;
-}
-.donation-text {
-    color: #B2B2B2;
 }
 .mobile-arrow{
     padding: 0 87px;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    display: none;
 }
 
 @media only screen and (max-width: 968px) {
+    .shelter_elements:nth-child(1) {
+        margin-top: 55px;
+        white-space: nowrap;
 
+    }
+    .shelter_elements:nth-child(2) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(3) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(4) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(5) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+
+    .shelter_elements:nth-child(6) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(7) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(8) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+
+    .shelter_elements:nth-child(9) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+    .mobile-arrow {
+        display: flex;
+    }
+
+    .footer-puppy {
+        margin-top: 65px;
+    }
     .help-links {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -490,8 +694,6 @@ h5 {
     }
     .footer_box {
         margin-right: 61px;
-
-
     }
     .content {
         margin-top: 60px;
@@ -570,12 +772,95 @@ h5 {
     .footer_box{
         margin: 0;
     }
+    .slider-arrow {
+        display: none;
+    }
+
+    .shelter_elements:nth-child(4) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(5) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+
+    .shelter_elements:nth-child(6) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(7) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(8) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+
+    .shelter_elements:nth-child(9) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
 
 }
 @media only screen and (max-width: 450px) {
+
+    .shelter_elements:nth-child(3) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(4) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(5) {
+        margin-top: 55px;
+        white-space: nowrap;
+
+    }
+
+    .shelter_elements:nth-child(6) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(7) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+    .shelter_elements:nth-child(8) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+
+    .shelter_elements:nth-child(9) {
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
+    .help-title {
+        margin-bottom: 42px;
+    }
+    .slider-arrow {
+        display: none;
+    }
     .help-links {
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+    .footer-puppy {
+        margin-top: 40px;
     }
     nav {
         display: none;
@@ -589,7 +874,7 @@ h5 {
         height: 296px;
     }
     .content-title {
-        font-family: 'Georgia', serif;
+        font-family: Georgia;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
@@ -598,7 +883,7 @@ h5 {
 
     }
     .content-text {
-        font-family: 'Arial', serif;
+        font-family: Arial;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -614,11 +899,12 @@ h5 {
         margin-top: 105px;
     }
     .about-title {
-        font-family: 'Georgia', serif;
+        font-family: Georgia;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
+
 
     }
     .about {
@@ -637,14 +923,11 @@ h5 {
         height: 353.6px;
     }
     .donation-title {
-        font-family: 'Georgia', serif;
+        font-family: Georgia;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
-        color: #545454;
-    }
-    .donation-subhead {
         color: #545454;
     }
     .donation-dog-img {
@@ -662,7 +945,7 @@ h5 {
         padding-right: 10px;
     }
     .footer_h3 {
-        font-family: 'Georgia', serif;
+        font-family: Georgia;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
