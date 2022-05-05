@@ -6,6 +6,9 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.logo-link {
+    text-decoration: none;
+}
 .footer_flex {
     display: flex;
     margin-top: 16px;
