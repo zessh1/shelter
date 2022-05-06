@@ -27,6 +27,12 @@ footer {
     color: #B2B2B2;
     margin-top: 20px;
     margin-bottom: 0;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 380px;
 }
 .shelter_elements:nth-child(6) {
     margin-left: 171px;
@@ -75,6 +81,12 @@ footer {
 .about-title {
     color: #545454;
     letter-spacing: 0.06em;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    font-family: Georgia;
+    font-style: normal;
+    max-width: 370px;
 }
 div{
     box-sizing: border-box;
@@ -278,6 +290,7 @@ nav a {
     margin-top: 25px;
     margin-bottom: 0;
     line-height: 160%;
+    max-width: 430px;
 }
 .about-img{
     object-fit: cover;
@@ -364,11 +377,18 @@ h2 {
 }
 .content-title {
     color: #FFFFFF;
+    max-width: 310px;
 }
 .content-text {
     color: #CDCDCD;
     margin-top: 42px;
     margin-bottom: 0;
+    max-width: 460px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
 }
 h1 {
     margin: 0;
@@ -583,6 +603,13 @@ h5 {
 }
 .footer_h3 {
     color: #FFFFFF;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    max-width: 500px;
 }
 .del-a-affects {
     text-decoration: none;
@@ -597,7 +624,15 @@ h5 {
     letter-spacing: 0.06em;
 }
 .donation-title {
-    color: #545454;;
+    color: #545454;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    max-width: 300px;
+
 }
 .mobile-arrow{
     padding: 0 87px;
