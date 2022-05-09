@@ -6,12 +6,16 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.footer_box {
+    max-width: 302px;
+}
 .logo-link {
     text-decoration: none;
 }
 .footer_flex {
     display: flex;
     margin-top: 16px;
+    justify-content: space-between;
 
 }
 @font-face {
@@ -117,6 +121,7 @@ div{
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
+    margin-top: 10px;
     color: #FFFFFF;
     letter-spacing: 0.1em;
 }
@@ -200,6 +205,7 @@ header{
     color: #F1CDB3;
     font-size: 32px;
     font-family: Georgia;
+    margin: 0;
 
 }
 .burger-Title {
@@ -232,7 +238,9 @@ nav a {
     margin-left: 35px;
 }
 .start-burger-menu:hover {
-    color: #FFFFFF;
+    color: #FAFAFA;
+    padding-bottom: 1px;
+    border-bottom: 3px #F1CDB3 solid;
 }
 .btn:hover{
     background-color: #F1CDB3;
@@ -240,7 +248,6 @@ nav a {
 }
 .nav_menu_start_link {
     color: #FAFAFA;
-    opacity: 1;
     padding-bottom: 1px;
     border-bottom: 3px #F1CDB3 solid;
 }
@@ -390,9 +397,6 @@ h2 {
     font-size: 15px;
     line-height: 160%;
 }
-h1 {
-    margin: 0;
-}
 h2 {
     margin: 0;
 }
@@ -420,14 +424,12 @@ h5 {
     line-height: 110%;
     margin: 0;
 }
-.footer_box {
-    margin-right: 160px;
-}
 .footer_padding {
     display: flex;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 40px;
+    justify-content: space-between;
 }
 
 .footer-puppy {
@@ -520,7 +522,6 @@ h5 {
     font-family: Georgia;
     font-style: normal;
     font-weight: 400;
-    line-height: 22.1px;
 }
 .slider-view:hover .learn-more{
     background-color: #F1CDB3;
@@ -726,9 +727,6 @@ h5 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    .footer_flex {
-        justify-content: space-between;
     }
     .footer_box {
         margin-right: 61px;
