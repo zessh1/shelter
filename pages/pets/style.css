@@ -216,6 +216,7 @@ footer {
 .btn-clickable {
     border: 2px solid #F1CDB3;
     cursor: pointer;
+    background-color: #FFFFFF;
 }
 .btn-clickable:hover {
     background-color: #F1CDB3;
