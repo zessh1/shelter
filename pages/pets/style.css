@@ -349,6 +349,12 @@ button[disabled]{
     }
 }
 @media(max-width: 768px){
+    .pagination-btn {
+        margin-right: 10px;
+    }.pagination-btn:nth-child(1) {
+        margin-right: 0;
+    }
+
     .nav_menu{
         display: none;
     }
