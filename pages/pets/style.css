@@ -64,6 +64,9 @@ body {
     background: #F1CDB3;
     cursor: inherit;
 }
+.pagination-btn:nth-child(1) {
+    margin-left: 0;
+}
 
 @font-face {
     font-family: Georgia;
@@ -293,7 +296,13 @@ button[disabled]{
     padding-bottom: 1px;
     border-bottom: 3px #F1CDB3 solid;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1280px) {
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
     .footer-puppy {
         margin-top: 65px;
     }
@@ -339,7 +348,7 @@ button[disabled]{
         display: none;
     }
 }
-@media(max-width: 660px){
+@media(max-width: 768px){
     .nav_menu{
         display: none;
     }
@@ -365,10 +374,9 @@ button[disabled]{
     .test:nth-child(4) {
         display: none;
     }
-}
-@media only screen and (max-width: 450px) {
+
     .footer-puppy {
-        margin-top: 40px;
+        margin-top: 45px;
     }
     .footer_padding {
         padding-left: 10px;

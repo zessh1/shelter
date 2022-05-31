@@ -346,7 +346,6 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
 }
 .help-title {
     max-width: 308px;
@@ -643,7 +642,7 @@ h5 {
     display: none;
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1280px) {
     .shelter_elements:nth-child(1) {
         margin-top: 55px;
         white-space: nowrap;
@@ -691,9 +690,7 @@ h5 {
         white-space: nowrap;
 
     }
-    .mobile-arrow {
-        display: flex;
-    }
+
 
     .footer-puppy {
         margin-top: 65px;
@@ -703,7 +700,7 @@ h5 {
         grid-template-columns: 33% 33% 33%;
     }
     .slider-arrow{
-        display: none;
+        display: flex;
     }
     .mobile-arrow .slider-arrow{
         display: flex;
@@ -714,6 +711,7 @@ h5 {
     .header {
         padding-right: 30px;
         padding-left: 30px;
+        padding-top: 30px;
     }
     .start_screen {
         flex-direction: column;
@@ -775,13 +773,11 @@ h5 {
         align-items: center;
     }
     .donation-title {
-        margin-top: 80px;
         margin-bottom: 20px;
     }
     .about-pets-img {
-        display: none;
-        width: 630px;
-        height: 350px;
+        max-width: 350px;
+        max-height: 350px;
     }
     .about-pets-desc {
         max-width: 280px;
@@ -795,7 +791,10 @@ h5 {
 
 
 }
-@media(max-width: 660px){
+@media(max-width: 768px){
+    .mobile-arrow {
+        display: flex;
+    }
     .burger-logo{
         display: block;
     }
@@ -845,8 +844,8 @@ h5 {
 
     }
 
-}
-@media only screen and (max-width: 450px) {
+
+
 
     .shelter_elements:nth-child(3) {
         margin-top: 55px;
@@ -989,3 +988,4 @@ h5 {
     }
 
 }
+
