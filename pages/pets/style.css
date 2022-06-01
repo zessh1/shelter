@@ -348,6 +348,10 @@ button[disabled]{
     border-bottom: 3px #F1CDB3 solid;
 }
 @media only screen and (max-width: 1279px) {
+    .pagination-box {
+        padding-bottom: 76px;
+        margin-top: 40px;
+    }
     .footer_box:nth-child(2) {
         margin-left: 60px;
     }
@@ -407,6 +411,10 @@ button[disabled]{
     }
 }
 @media(max-width: 767px){
+    .pagination-box {
+        padding-bottom: 42px;
+        margin-top: 40px;
+    }
     .footer-contacts {
         display: block;
     }
@@ -462,5 +470,8 @@ button[disabled]{
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
+    }
+    .our-friends-title {
+        padding-top: 42px;
     }
 }
