@@ -968,6 +968,7 @@ h5 {
     .about {
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 0;
     }
     .about-content {
         margin-top: 0;
@@ -979,6 +980,8 @@ h5 {
     .about-img {
         width: 260px;
         height: 353.6px;
+        margin-bottom: 42px;
+        margin-top: 0;
     }
     .donation-title {
         font-family: Georgia;
