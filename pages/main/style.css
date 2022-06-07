@@ -142,7 +142,8 @@ div{
 }
 .burger-logo{
     display: none;
-    margin-left: auto;
+    margin-left: 5px;
+    margin-top: 20px;
 }
 .burger{
     position: fixed;
@@ -575,6 +576,9 @@ h5 {
     align-items: flex-end;
     position: absolute;
     z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
 }
 .slider-popup.active{
     display: flex;
@@ -1033,6 +1037,9 @@ h5 {
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
+    }
+    .about-pets-img {
+        display: none;
     }
 
 }

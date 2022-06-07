@@ -7,6 +7,7 @@ const pagination_page = document.getElementById("pagination-page")
 
 let bigData = []
 var element = document.getElementById('overlay');
+var element_two = document.querySelector('.slider-popup')
 burgerMenu.onclick = function () {
     document.querySelector('.burger').classList.add('active');
     element.classList.add('active')
@@ -78,7 +79,7 @@ function drawpets( startCount = 0,count ){
 
         (function (index) {
             btn.addEventListener("click", function () {
-                body.style.overflow = "hidden"
+
                 element.classList.add("active");
 
                 addInfoToPop(index)
@@ -92,6 +93,35 @@ function drawpets( startCount = 0,count ){
 
 
     }
+}
+function addInfoToPop(k) {
+    const petName = document.querySelector('.pet-name');
+    const petOrigin = document.querySelector('.pet-origin');
+    const petBreed = document.querySelector('.breed');
+    const petDescr = document.querySelector('.pet-descr');
+    const petAge = document.querySelector('.pet-age');
+    const petInoculations = document.querySelector('.pet-inoculations');
+    const petDiseases = document.querySelector('.pet-diseases');
+    const petParasites = document.querySelector('.pet-parasites');
+    const petImg = document.querySelector('.about-pets-img')
+
+    petName.innerHTML = bigData[k].name
+    petOrigin.innerHTML = bigData[k].type
+    petBreed.innerHTML = bigData[k].breed
+    petDescr.innerHTML = bigData[k].description
+    petAge.innerHTML = bigData[k].age
+    petInoculations.innerHTML = bigData[k].inoculations
+    petDiseases.innerHTML = bigData[k].disiases
+    petParasites.innerHTML = bigData[k].parasites
+    petImg.src = bigData[k].img
+    element_two.classList.add('active')
+}
+function return_menu() {
+    var element = document.getElementById('overlay');
+    var element_two = document.querySelector('.slider-popup')
+    element.classList.remove("active");
+    element_two.classList.remove("active");
+
 }
 
 // let haveIt = [];

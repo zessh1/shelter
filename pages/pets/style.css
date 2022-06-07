@@ -2,6 +2,7 @@
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+
 }
 body {
     margin: 0;
@@ -9,11 +10,7 @@ body {
 * {
     margin: 0;
 }
-.test {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .logo-link {
     text-decoration: none;
 }
@@ -100,6 +97,21 @@ body {
     color: #545454;
     margin: 30px 0;
 }
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-view {
+margin-right: 45px;
+}
+.slider-view:nth-child(4) {
+    margin-right: 0;
+
+}
+.slider-view:nth-child(8) {
+    margin-right: 0;
+}
 div {
     box-sizing: border-box;
 }
@@ -135,6 +147,7 @@ div {
 
 }
 .burger-exit-menu {
+    transition-duration: 5s;
     transform: rotate(90deg);
 }
 .burger-logo-exit {
@@ -206,6 +219,7 @@ div {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     margin-top: 45px;
+
 }
 .main {
     background: #F6F6F6;
@@ -337,27 +351,7 @@ button[disabled]{
 .del-a-affects {
     text-decoration: none;
 }
-.test:nth-child(3) {
-    margin-top: 0;
-}
 
-.test:nth-child(4) {
-    margin-top: 0;
-}
-
-.test:nth-child(5) {
-    margin-top: 30px;
-}
-
-.test:nth-child(6) {
-    margin-top: 30px;
-}
-.test:nth-child(7) {
-    margin-top: 30px;
-    }
-.test:nth-child(8) {
-    margin-top: 30px;
-    }
 .nav_menu_start_link {
     color: #292929;
     padding-bottom: 1px;
@@ -406,27 +400,24 @@ button[disabled]{
         margin-top: 30px;
         align-items: center;
     }
-    .test:nth-child(3) {
-        margin-top: 30px;
+    .slider-view:nth-child(2) {
+        margin-right: 0;
     }
-    .test:nth-child(4) {
-        margin-top: 30px;
-    }
-    .test:nth-child(5) {
-        margin-top: 30px;
-    }
-    .test:nth-child(6) {
-        margin-top: 30px;
-    }
-
-    .test:nth-child(7) {
-        display: none;
-    }
-    .test:nth-child(8) {
-        display: none;
+    .slider-view:nth-child(6) {
+        margin-right: 0;
     }
 }
 @media(max-width: 767px){
+    .main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .our-friends-title {
+        font-size: 25px;
+    }
+    .slider-view {
+        margin-right: 0;
+    }
     .pagination-box {
         padding-bottom: 42px;
         margin-top: 40px;
@@ -461,20 +452,6 @@ button[disabled]{
         margin-top: 42px;
         align-items: center;
     }
-    .test:nth-child(5) {
-        display: none;
-    }    .test:nth-child(2) {
-        margin-top: 30px;
-    }    .test:nth-child(3) {
-        margin-top: 30px;
-    }
-    .test:nth-child(6) {
-        display: none;
-    }
-    .test:nth-child(4) {
-        display: none;
-    }
-
     .footer-puppy {
         margin-top: 45px;
     }
