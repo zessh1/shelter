@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main/style.css">
     <link rel="stylesheet" href="style.css">
     <title>Cozy House</title>
     <link rel="icon" href="../../assets/icons/paws.png">
@@ -22,7 +23,7 @@
         <a href="../main/index.html" class="burger-menu-links">About the shelter</a>
         <a href="../pets/index.html" class="burger-menu-links">Our pets</a>
         <a href="../main/index.html#help" class="burger-menu-links">Help the shelter</a>
-        <a href="#footer" class="burger-menu-links">Contacts</a>
+        <a href="#footer" class="burger-menu-links" onclick="hideburger()">Contacts</a>
     </nav>
 </div>
 <div class="overlay" id="overlay"></div>
@@ -58,76 +59,13 @@
                 <h3 class="our-friends-title">Our friends who<br>are looking for a house</h3>
             </div>
             <div class="our-pets-grid-box">
-                <div class="test">
-                    <div class="our-pets-box">
-                        <img src="../../assets/images/pets-katrine.png" alt="" class="slider-view-img">
-                        <p class="slider-view-name">Katarina</p>
-                        <button class="learn-more btn-clickable btn">Learn More</button>
-                    </div>
-                </div>
-                <div class="test">
-
-                    <div class="our-pets-box">
-                        <img src="../../assets/images/pets-jennifer.png" alt="" class="slider-view-img">
-                        <p class="slider-view-name">Jennifer</p>
-                        <button class="learn-more btn-clickable btn">Learn More</button>
-                    </div>
-                </div>
-                <div class="test">
-
-                    <div class="our-pets-box">
-                        <img src="../../assets/images/pets-woody.png" alt="" class="slider-view-img">
-                        <p class="slider-view-name">Woody</p>
-                        <button class="learn-more btn-clickable btn">Learn More</button>
-                    </div>
-                </div>
-                <div class="test">
-
-                    <div class="our-pets-box">
-                        <img src="../../assets/images/pets-katrine-1.png" alt="" class="slider-view-img">
-                        <p class="slider-view-name">Sophia</p>
-                        <button class="learn-more btn-clickable btn">Learn More</button>
-                    </div>
-                </div>
-                <div class="test">
-
-                    <div class="our-pets-box">
-                        <img src="../../assets/images/pets-timmy.png" alt="" class="slider-view-img">
-                        <p class="slider-view-name">Timmy</p>
-                        <button class="learn-more btn-clickable btn">Learn More</button>
-                    </div>
-                </div>
-                <div class="test">
-
-                    <div class="our-pets-box">
-                        <img src="../../assets/images/pets-charly.png" alt="" class="slider-view-img">
-                        <p class="slider-view-name">Charly</p>
-                        <button class="learn-more btn-clickable btn">Learn More</button>
-                    </div>
-                </div>
-                <div class="test">
-
-                    <div class="our-pets-box">
-                        <img src="../../assets/images/pets-scarlet.png" alt="" class="slider-view-img">
-                        <p class="slider-view-name">Scarlett</p>
-                        <button class="learn-more btn-clickable btn">Learn More</button>
-                    </div>
-                </div>
-                <div class="test">
-
-                    <div class="our-pets-box">
-                        <img src="../../assets/images/pets-katrine-2.png" alt="" class="slider-view-img">
-                        <p class="slider-view-name">Freddie</p>
-                        <button class="learn-more btn-clickable btn" >Learn More</button>
-                    </div>
-                </div>
             </div>
             <div class="pagination-box">
-                <button class="pagination-btn btn" disabled><<</button>
-                <button class="pagination-btn btn" disabled><</button>
-                <button class="pagination-btn pagination-active btn">1</button>
-                <button class="pagination-btn btn-clickable btn" type="button">></button>
-                <button class="pagination-btn btn-clickable btn">>></button>
+                <button class="pagination-btn btn"  id="pagination-left-full-jump"><<</button>
+                <button class="pagination-btn btn"  id="pagination-left-jump"><</button>
+                <button class="pagination-btn pagination-active btn" id="pagination-page">1</button>
+                <button class="pagination-btn btn btn-clickable" id="pagination-right-jump"  type="button">></button>
+                <button class="pagination-btn btn btn-clickable" id="pagination-right-full-jump">>></button>
             </div>
 
         </div>

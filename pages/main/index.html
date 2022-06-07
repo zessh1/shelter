@@ -22,10 +22,10 @@
         <img src="../../assets/icons/menu-burger.svg" class="burger-exit-menu" id="burger-exit-menu" alt="burger-menu">
     </div>
     <nav class="burger-menu">
-        <a href="#start-screen" class="burger-menu-links">About the shelter</a>
+        <a href="#start-screen" class="burger-menu-links" onclick="hideburger()">About the shelter</a>
         <a href="../pets/index.html" class="burger-menu-links">Our pets</a>
-        <a href="#help" class="burger-menu-links">Help the shelter</a>
-        <a href="#footer" class="burger-menu-links">Contacts</a>
+        <a href="#help" class="burger-menu-links" onclick="hideburger()">Help the shelter</a>
+        <a href="#footer" class="burger-menu-links" onclick="hideburger()">Contacts</a>
     </nav>
 </div>
 <div class="overlay" id="overlay"></div>
@@ -104,36 +104,36 @@
                             <img src="../../assets/icons/Arrow.png" alt="">
                         </div>
                         <div class="slider-view-container" id="sliderView">
-                            <div class="slider-view">
-                                <img src="../../assets/images/pets-katrine.png" alt="" class="slider-view-img">
-                                <p class="slider-view-name">Katarina</p>
-                                <button class="learn-more btn" onclick="callSliderPop('katarine')">Learn More</button>
-                            </div>
-                            <div class="slider-view">
-                                <img src="../../assets/images/pets-jennifer.png" alt="" class="slider-view-img">
-                                <p class="slider-view-name">Jennifer</p>
-                                <button class="learn-more btn" onclick="callSliderPop('jennifer')">Learn More</button>
-                            </div>
-                            <div class="slider-view">
-                                <img src="../../assets/images/pets-woody.png" alt="" class="slider-view-img">
-                                <p class="slider-view-name">Woody</p>
-                                <button class="learn-more btn" onclick="callSliderPop('woody')">Learn More</button>
-                            </div>
-                            <div class="slider-view">
-                                <img src="../../assets/images/pets-katrine.png" alt="" class="slider-view-img">
-                                <p class="slider-view-name">Katarina</p>
-                                <button class="learn-more btn" onclick="callSliderPop('katarine')">Learn More</button>
-                            </div>
-                            <div class="slider-view">
-                                <img src="../../assets/images/pets-jennifer.png" alt="" class="slider-view-img">
-                                <p class="slider-view-name">Jennifer</p>
-                                <button class="learn-more btn" onclick="callSliderPop('jennifer')">Learn More</button>
-                            </div>
-                            <div class="slider-view">
-                                <img src="../../assets/images/pets-woody.png" alt="" class="slider-view-img">
-                                <p class="slider-view-name">Woody</p>
-                                <button class="learn-more btn" onclick="callSliderPop('woody')">Learn More</button>
-                            </div>
+<!--                            <div class="slider-view">-->
+<!--                                <img src="../../assets/images/katrine.png" alt="" class="slider-view-img">-->
+<!--                                <p class="slider-view-name">Katarina</p>-->
+<!--                                <button class="learn-more btn" onclick="callSliderPop('katarine')">Learn More</button>-->
+<!--                            </div>-->
+<!--                            <div class="slider-view">-->
+<!--                                <img src="../../assets/images/jennifer.png" alt="" class="slider-view-img">-->
+<!--                                <p class="slider-view-name">Jennifer</p>-->
+<!--                                <button class="learn-more btn" onclick="callSliderPop('jennifer')">Learn More</button>-->
+<!--                            </div>-->
+<!--                            <div class="slider-view">-->
+<!--                                <img src="../../assets/images/woody.png" alt="" class="slider-view-img">-->
+<!--                                <p class="slider-view-name">Woody</p>-->
+<!--                                <button class="learn-more btn" onclick="callSliderPop('woody')">Learn More</button>-->
+<!--                            </div>-->
+<!--                            <div class="slider-view">-->
+<!--                                <img src="../../assets/images/katrine.png" alt="" class="slider-view-img">-->
+<!--                                <p class="slider-view-name">Katarina</p>-->
+<!--                                <button class="learn-more btn" onclick="callSliderPop('katarine')">Learn More</button>-->
+<!--                            </div>-->
+<!--                            <div class="slider-view">-->
+<!--                                <img src="../../assets/images/jennifer.png" alt="" class="slider-view-img">-->
+<!--                                <p class="slider-view-name">Jennifer</p>-->
+<!--                                <button class="learn-more btn" onclick="callSliderPop('jennifer')">Learn More</button>-->
+<!--                            </div>-->
+<!--                            <div class="slider-view">-->
+<!--                                <img src="../../assets/images/woody.png" alt="" class="slider-view-img">-->
+<!--                                <p class="slider-view-name">Woody</p>-->
+<!--                                <button class="learn-more btn" onclick="callSliderPop('woody')">Learn More</button>-->
+<!--                            </div>-->
                         </div>
                         <div class="slider-arrow-right slider-arrow btn" id="slideRight">
                             <img src="../../assets/icons/Arrow.png" alt="">
@@ -144,10 +144,14 @@
                                 <img src="../../assets/icons/X.png" id="exit_button" alt="exit">
                             </div>
                             <div class="about-pets">
-                                <img src="../../assets/images/pets-jennifer.png" class="about-pets-img" alt="dog-jennifer">
+                                <img src="../../assets/images/jennifer.png" class="about-pets-img" alt="dog-jennifer">
                                 <div class="about-pets-desc">
                                     <h3 class="pet-name">Jennifer</h3>
-                                    <h4 class="pet-origin">Dog - Labrador</h4>
+                                    <div class="pet-title-box">
+                                        <h4 class="pet-origin">Dog </h4>
+                                        <p class="dash"> - </p>
+                                        <h4 class="breed"></h4>
+                                    </div>
                                     <h5 class="pet-descr">Jennifer is a sweet 2 months old Labrador that is patiently waiting
                                         to find a new forever home. This girl really enjoys being able to go outside to run
                                         and play, but won't hesitate to play up a storm in the house if she has all of her

@@ -10,6 +10,14 @@ footer {
     max-width: 302px;
     padding-top: 16px;
 }
+.dash {
+    margin: 0;
+    font-size: 25px;
+    margin-left: 5px;
+}
+.slider-view{
+    margin-bottom: 25px;
+}
 .logo-link {
     text-decoration: none;
 }
@@ -163,7 +171,6 @@ div{
     margin-left: 35px;
 }
 header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -190,6 +197,10 @@ header{
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+}
+.pet-title-box {
+    display: flex;
+    margin-top: 10px;
 }
 .header {
     display: flex;
@@ -575,7 +586,11 @@ h5 {
 }
 .about-pets-desc {
     max-width: 400px;
-
+    margin-left: 10px;
+}
+.breed {
+    font-family: Georgia;
+    margin-left: 5px;
 }
 .about-pets-img {
     width: 500px;
@@ -592,7 +607,6 @@ h5 {
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
-    margin-top: 10px;
     margin-bottom: 0;
 }
 .pet-descr {
@@ -801,10 +815,20 @@ h5 {
     .pet-name,.pet-origin{
         text-align: center;
     }
+    .slider-view-container {
+        max-width: 580px;
+    }
 
 
 }
 @media(max-width: 767px){
+    header {
+        position: fixed;
+    }
+    .slider-view-container {
+        max-width: 270px;
+    }
+
     .shelter-cards-names {
         font-size: 15px;
     }
