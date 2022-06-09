@@ -52,49 +52,53 @@
 </header>
 
 <main>
-    <div class="slider-popup" id="slider_popup">
-        <div class="exit-radius" onclick="return_menu()">
-            <img src="../../assets/icons/X.png" id="exit_button" alt="exit">
-        </div>
-        <div class="about-pets">
-            <img src="../../assets/images/jennifer.png" class="about-pets-img" alt="dog-jennifer">
-            <div class="about-pets-desc">
-                <h3 class="pet-name">Jennifer</h3>
-                <div class="pet-title-box">
-                    <h4 class="pet-origin">Dog </h4>
-                    <p class="dash"> - </p>
-                    <h4 class="breed"></h4>
-                </div>
-                <h5 class="pet-descr">Jennifer is a sweet 2 months old Labrador that is patiently waiting
-                    to find a new forever home. This girl really enjoys being able to go outside to run
-                    and play, but won't hesitate to play up a storm in the house if she has all of her
-                    favorite toys.</h5>
-                <ul>
-                    <li>Age: <span class="pet-age"></span></li>
-                    <li>Inoculations: <span class="pet-inoculations"></span></li>
-                    <li>Diseases: <span class="pet-diseases"></span></li>
-                    <li>Parasites: <span class="pet-parasites"></span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
     <div class="main">
         <div class="container">
+            <div class="main-body">
 
-            <div class="our-friends-title-box">
-                <h3 class="our-friends-title">Our friends who<br>are looking for a house</h3>
-            </div>
-            <div class="centered">
-                <div class="our-pets-grid-box">
+                <div class="our-friends-title-box">
+                    <h3 class="our-friends-title">Our friends who<br>are looking for a house</h3>
+                </div>
+                <div class="slider-popup" id="slider_popup">
+                    <div class="exit-radius" onclick="return_menu()">
+                        <img src="../../assets/icons/X.png" id="exit_button" alt="exit">
+                    </div>
+                    <div class="about-pets">
+                        <img src="../../assets/images/jennifer.png" class="about-pets-img" alt="dog-jennifer">
+                        <div class="about-pets-desc">
+                            <h3 class="pet-name">Jennifer</h3>
+                            <div class="pet-title-box">
+                                <h4 class="pet-origin">Dog </h4>
+                                <p class="dash"> - </p>
+                                <h4 class="breed"></h4>
+                            </div>
+                            <h5 class="pet-descr">Jennifer is a sweet 2 months old Labrador that is patiently waiting
+                                to find a new forever home. This girl really enjoys being able to go outside to run
+                                and play, but won't hesitate to play up a storm in the house if she has all of her
+                                favorite toys.</h5>
+                            <ul>
+                                <li>Age: <span class="pet-age"></span></li>
+                                <li>Inoculations: <span class="pet-inoculations"></span></li>
+                                <li>Diseases: <span class="pet-diseases"></span></li>
+                                <li>Parasites: <span class="pet-parasites"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="centered">
+                    <div class="our-pets-grid-box">
+                    </div>
+                </div>
+                <div class="pagination-box">
+                    <button class="pagination-btn btn"  id="pagination-left-full-jump"><<</button>
+                    <button class="pagination-btn btn"  id="pagination-left-jump"><</button>
+                    <button class="pagination-btn pagination-active btn" id="pagination-page">1</button>
+                    <button class="pagination-btn btn btn-clickable" id="pagination-right-jump"  type="button">></button>
+                    <button class="pagination-btn btn btn-clickable" id="pagination-right-full-jump">>></button>
                 </div>
             </div>
-            <div class="pagination-box">
-                <button class="pagination-btn btn"  id="pagination-left-full-jump"><<</button>
-                <button class="pagination-btn btn"  id="pagination-left-jump"><</button>
-                <button class="pagination-btn pagination-active btn" id="pagination-page">1</button>
-                <button class="pagination-btn btn btn-clickable" id="pagination-right-jump"  type="button">></button>
-                <button class="pagination-btn btn btn-clickable" id="pagination-right-full-jump">>></button>
-            </div>
+
 
         </div>
 
@@ -104,7 +108,6 @@
     <div class="container" id="footer">
         <div class="footer-flex">
             <div class="footer_padding">
-
                 <div class="footer-contacts">
 
                     <div class="footer_box">

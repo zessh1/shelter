@@ -14,6 +14,7 @@ burgerMenu.onclick = function () {
     element.classList.add('active')
     document.getElementById("logo").style.display = "none";
     body.style.overflow = "hidden"
+    burgerLogo.style.display = "none"
 
 }
 const body = document.querySelector("body")
@@ -30,9 +31,11 @@ function hideburger() {
     element.classList.remove("active");
     document.getElementById("logo").style.display = "flex";
     document.getElementById("logo").style.flexDirection = "column";
-    burgerLogo.style.display = "none"
     body.style.overflow = "unset"
     document.getElementById("logo").style.display = "block";
+    if (window.screen.availWidth < 780) {
+        burgerLogo.style.display = "block"
+    }
 }
 fetch('../../tsconfig.json') //path to the file with json data
     .then(response => {
@@ -90,6 +93,7 @@ function drawpets( startCount = 0,count ){
             btn.addEventListener("click", function () {
 
                 element.classList.add("active");
+                body.style.overflow = "hidden"
 
                 addInfoToPop(index)
 
@@ -130,6 +134,7 @@ function return_menu() {
     var element_two = document.querySelector('.slider-popup')
     element.classList.remove("active");
     element_two.classList.remove("active");
+    body.style.overflow = "unset"
 
 }
 

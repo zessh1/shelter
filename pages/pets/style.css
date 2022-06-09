@@ -1,8 +1,17 @@
 .container{
     max-width: 1280px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    justify-content: center;
 
+}
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 body {
     margin: 0;
@@ -110,9 +119,7 @@ margin-right: 45px;
 
 }
 .slider-popup {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 80%;
+
 }
 .slider-view:nth-child(8) {
     margin-right: 0;
