@@ -104,6 +104,12 @@ footer {
     font-style: normal;
     max-width: 370px;
 }
+.burger-title-box {
+    display: none;
+    text-decoration: none;
+    margin-leftright: 10px;
+    marin-top: 30px;
+}
 div{
     box-sizing: border-box;
 }
@@ -123,6 +129,9 @@ div{
     display: flex;
     justify-content: space-between;
     margin-right: 53px;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 10px;
 }
 .burger-exit-menu {
     transform: rotate(90deg);
@@ -144,6 +153,9 @@ div{
     display: none;
     margin-left: 5px;
     margin-top: 20px;
+    position: fixed;
+    right: 35px;
+    z-index: 5;
 }
 .burger{
     position: fixed;
@@ -152,6 +164,7 @@ div{
     background-color: #292929;
     right: -330px;
     z-index: 5;
+    transition: 5s;
 }
 .burger.active{
     right: 0;
@@ -576,9 +589,7 @@ h5 {
     align-items: flex-end;
     position: absolute;
     z-index: 5;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 80%;
+
 }
 .slider-popup.active{
     display: flex;

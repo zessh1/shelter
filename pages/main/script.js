@@ -127,19 +127,19 @@ const slideLeft = document.getElementById('slideLeft');
 const slideRight = document.getElementById('slideRight');
 
 slideRight.onclick = function () {
-    document.getElementById('sliderView').scrollLeft += 220;
+    document.getElementById('sliderView').scrollLeft += 290;
 };
 slideLeft.onclick = function () {
-    document.getElementById('sliderView').scrollLeft -= 220;
+    document.getElementById('sliderView').scrollLeft -= 290;
 };
 const slideLeftMobile = document.getElementById('slideLeftMobile');
 const slideRightMobile = document.getElementById('slideRightMobile');
 
 slideRightMobile.onclick = function () {
-    document.getElementById('sliderView').scrollLeft += 220;
+    document.getElementById('sliderView').scrollLeft += 290;
 };
 slideLeftMobile.onclick = function () {
-    document.getElementById('sliderView').scrollLeft -= 220;
+    document.getElementById('sliderView').scrollLeft -= 290;
 };
 var element = document.getElementById('overlay');
 var element_two = document.querySelector('.slider-popup')
@@ -154,10 +154,13 @@ function return_menu() {
 
 
 const burgerMenu = document.getElementById('burgerLogo');
+const burgerLogo = document.querySelector('.burger-title-box')
 burgerMenu.onclick = function () {
     document.querySelector('.burger').classList.add('active');
     element.classList.add("active");
     document.getElementById("logo").style.display = "none";
+    burgerLogo.style.display = "block"
+    body.style.overflow = "hidden"
 
 }
 const burgerExit = document.getElementById('burger-exit-menu')
@@ -166,9 +169,16 @@ burgerExit.onclick = function () {
     element.classList.remove("active");
     document.getElementById("logo").style.display = "flex";
     document.getElementById("logo").style.flexDirection = "column";
+    burgerLogo.style.display = "none"
+    body.style.overflow = "unset"
+
 }
 
 function hideburger() {
     document.querySelector('.burger').classList.remove('active');
     element.classList.remove("active");
+    document.getElementById("logo").style.display = "flex";
+    document.getElementById("logo").style.flexDirection = "column";
+    burgerLogo.style.display = "none"
+    body.style.overflow = "unset"
 }

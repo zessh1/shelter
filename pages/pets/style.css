@@ -109,6 +109,11 @@ margin-right: 45px;
     margin-right: 0;
 
 }
+.slider-popup {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+}
 .slider-view:nth-child(8) {
     margin-right: 0;
 }
@@ -142,19 +147,15 @@ div {
     color: #F1CDB3;
     font-size: 32px;
     font-family: Georgia;
-    margin-top: 30px;
+    margin-top: 0;
     margin-left: 10px;
 
 }
 .burger-exit-menu {
-    transition-duration: 5s;
+    transition: 5s;
     transform: rotate(90deg);
 }
-.burger-logo-exit {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 53px;
-}
+
 .burger{
     position: fixed;
     height: 100%;

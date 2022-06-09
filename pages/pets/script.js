@@ -8,23 +8,31 @@ const pagination_page = document.getElementById("pagination-page")
 let bigData = []
 var element = document.getElementById('overlay');
 var element_two = document.querySelector('.slider-popup')
+
 burgerMenu.onclick = function () {
     document.querySelector('.burger').classList.add('active');
     element.classList.add('active')
     document.getElementById("logo").style.display = "none";
+    body.style.overflow = "hidden"
 
 }
+const body = document.querySelector("body")
 const burgerExit = document.getElementById('burger-exit-menu')
 burgerExit.onclick = function () {
     document.querySelector('.burger').classList.remove('active');
     element.classList.remove('active')
-    document.getElementById("logo").style.display = "flex";
-    document.getElementById("logo").style.flexDirection = "column";
+    document.getElementById("logo").style.display = "block";
+    body.style.overflow = "unset"
 }
 
 function hideburger() {
     document.querySelector('.burger').classList.remove('active');
-    element.classList.remove('active')
+    element.classList.remove("active");
+    document.getElementById("logo").style.display = "flex";
+    document.getElementById("logo").style.flexDirection = "column";
+    burgerLogo.style.display = "none"
+    body.style.overflow = "unset"
+    document.getElementById("logo").style.display = "block";
 }
 fetch('../../tsconfig.json') //path to the file with json data
     .then(response => {
@@ -72,6 +80,7 @@ function drawpets( startCount = 0,count ){
         p.classList.add("slider-view-name");
         btn.classList.add("learn-more", "btn");
         btn.innerHTML = "Learn more";
+
 
         img.src = bigData[i].img;
         p.innerHTML = bigData[i].name;
@@ -124,26 +133,7 @@ function return_menu() {
 
 }
 
-// let haveIt = [];
-//
-// function generateUniqueRandom(maxNr) {
-//
-//     let random = (Math.random() * maxNr).toFixed();
-//
-//
-//     random = Number(random);
-//
-//     if(!haveIt.includes(random)) {
-//         haveIt.push(random);
-//         return random;
-//     } else {
-//         if(haveIt.length < maxNr) {
-//
-//             haveIt = []
-//             return  generateUniqueRandom(maxNr);
-//         }
-//     }
-// }
+
 
 function getRandomNumberBetweenPag(min, max) {
     let liss = []
