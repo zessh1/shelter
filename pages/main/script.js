@@ -142,11 +142,9 @@ slideLeftMobile.onclick = function () {
     document.getElementById('sliderView').scrollLeft -= 290;
 };
 var element = document.getElementById('overlay');
-var element_two = document.querySelector('.slider-popup')
+var element_two = document.querySelector('.slide-popup')
 
 function return_menu() {
-    var element = document.getElementById('overlay');
-    var element_two = document.querySelector('.slider-popup')
     element.classList.remove("active");
     element_two.classList.remove("active");
     body.style.overflow = "unset"

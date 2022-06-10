@@ -46,10 +46,46 @@ fetch('../../tsconfig.json') //path to the file with json data
         paginationDataGenerator(48, 7, data)
 
     });
-function paginationDataGenerator(amount, count, data) {
+function randomNumberArr(list) {
+    let arr = []
+    let usedArr = []
 
+    let i = 0
+    while (i < list.length) {
+        let randomNumber = Math.floor(Math.random() * list.length)
+        if (!usedArr.includes(randomNumber)) {
+            arr.push(list[randomNumber])
+            usedArr.push(randomNumber)
+            i++
+        }
+    }
+    return arr
+}
+function randomnumbers() {
+    arr = [0,1,2,3,4,5,6,7]
+
+
+    pet = [
+        ...randomNumberArr(arr),
+        ...randomNumberArr(arr),
+        ...randomNumberArr(arr),
+        ...randomNumberArr(arr),
+        ...randomNumberArr(arr),
+        ...randomNumberArr(arr),]
+
+    return pet
+}
+element.onclick =  function (){
+    return_menu()
+    hideburger()
+}
+
+
+
+function paginationDataGenerator(amount, count, data) {
+    x = randomnumbers()
     for (let i = 0; i < amount; i++) {
-        bigData.push(data[getRandomNumberBetweenPag(0, count)])
+        bigData.push(data[x[i]])
 
     }
     checkdisablebtn();
@@ -69,10 +105,12 @@ function paginationDataGenerator(amount, count, data) {
         console.log("1280>")
     }
 }
+const slide_popup = document.querySelector(".slide-popup")
 function drawpets( startCount = 0,count ){
         const slider_view_container = document.querySelector(".our-pets-grid-box")
         slider_view_container.innerHTML = '';
     for (var i = startCount; i < count; i++) {
+
         const div = document.createElement("div")
         const img = document.createElement("img")
         const p = document.createElement("p")
@@ -92,8 +130,10 @@ function drawpets( startCount = 0,count ){
         (function (index) {
             btn.addEventListener("click", function () {
 
-                element.classList.add("active");
+
                 body.style.overflow = "hidden"
+                slide_popup.classList.add("active")
+                element.classList.add("active")
 
                 addInfoToPop(index)
 
@@ -127,37 +167,36 @@ function addInfoToPop(k) {
     petDiseases.innerHTML = bigData[k].disiases
     petParasites.innerHTML = bigData[k].parasites
     petImg.src = bigData[k].img
-    element_two.classList.add('active')
 }
 function return_menu() {
     var element = document.getElementById('overlay');
-    var element_two = document.querySelector('.slider-popup')
     element.classList.remove("active");
-    element_two.classList.remove("active");
+    slide_popup.classList.remove("active");
     body.style.overflow = "unset"
 
 }
 
 
 
-function getRandomNumberBetweenPag(min, max) {
-    let liss = []
-    number = Math.floor(Math.random() * (max - min + 1) + min);
 
-    if (!liss.includes(number)) {
-        liss.push(number)
-        return number;
-    } else {
-        if (liss.length <= max) {
-            return getRandomNumberBetween(min, max)
-        } else {
-
-            liss = [];
-            return false;
-        }
-    }
-
-}
+// function getRandomNumberBetweenPag(min, max) {
+//     let liss = []
+//     number = Math.floor(Math.random() * (max - min + 1) + min);
+//
+//     if (!liss.includes(number)) {
+//         liss.push(number)
+//         return number;
+//     } else {
+//         if (liss.length <= max) {
+//             return getRandomNumberBetween(min, max)
+//         } else {
+//
+//             liss = [];
+//             return false;
+//         }
+//     }
+//
+// }
 
 let startnum = 0
 let lastnum = 8
