@@ -605,6 +605,10 @@ h5 {
     background: #FAFAFA;
     margin-top: 50px;
 }
+.about-pets:hover + .exit-radius{
+        border: 3px solid #1f23f3;
+        background-color: #FFFFFF;
+}
 .about-pets-desc {
     max-width: 400px;
     margin-left: 10px;
