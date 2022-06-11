@@ -1,11 +1,21 @@
 const bigData = []
 const data_copy = []
+let lis = [];
+const slideLeft = document.getElementById('slideLeft');
+const slideRight = document.getElementById('slideRight');
+const body = document.querySelector("body");
+const slideLeftMobile = document.getElementById('slideLeftMobile');
+const slideRightMobile = document.getElementById('slideRightMobile');
+var element = document.getElementById('overlay');
+var element_two = document.querySelector('.slide-popup');
+const burgerMenu = document.getElementById('burgerLogo');
+const burgerLogo = document.querySelector('.burger-title-box');
+const burgerExit = document.getElementById('burger-exit-menu');
 fetch('../../tsconfig.json') //path to the file with json data
     .then(response => {
         return response.json();
     })
     .then(data => {
-        console.log(data);
         paginationDataGenerator(48, 6, data)
 
         const dataLength = data.length - 1;
@@ -26,7 +36,6 @@ fetch('../../tsconfig.json') //path to the file with json data
 
             img.src = data[x].img;
             p.innerHTML = data[x].name;
-            console.log(data[x].name);
 
             (function (index) {
                 btn.addEventListener("click", function () {
@@ -41,7 +50,6 @@ fetch('../../tsconfig.json') //path to the file with json data
             div.appendChild(p);
             div.appendChild(btn);
             slider_view_container.appendChild(div);
-            console.log(dataLength);
 
 
         }
@@ -50,7 +58,6 @@ fetch('../../tsconfig.json') //path to the file with json data
     });
 
 
-const body = document.querySelector("body")
 
 function addInfoToPop(k) {
     const petName = document.querySelector('.pet-name');
@@ -76,14 +83,11 @@ function addInfoToPop(k) {
 }
 
 function paginationDataGenerator(amount, count, data) {
-    // console.log(getRandomNumberBetweenPag(0, 6), 'asdasda');
     for (let i = 0; i < amount; i++) {
         bigData.push(data[getRandomNumberBetweenPag(0, count)])
-        console.log('aee' , bigData)
     }
 }
 
-let lis = [];
 
 function getRandomNumberBetween(min, max) {
     number = Math.floor(Math.random() * (max - min + 1) + min);
@@ -95,7 +99,6 @@ function getRandomNumberBetween(min, max) {
         if (lis.length <= max) {
             return getRandomNumberBetween(min, max)
         } else {
-            console.log("amoiwura")
             lis = [];
             return false;
         }
@@ -113,7 +116,6 @@ function getRandomNumberBetweenPag(min, max) {
         if (liss.length <= max) {
             return getRandomNumberBetween(min, max)
         } else {
-            console.log("amoiwura")
             liss = [];
             return false;
         }
@@ -122,18 +124,12 @@ function getRandomNumberBetweenPag(min, max) {
 }
 
 
-
-const slideLeft = document.getElementById('slideLeft');
-const slideRight = document.getElementById('slideRight');
-
 slideRight.onclick = function () {
     document.getElementById('sliderView').scrollLeft += 290;
 };
 slideLeft.onclick = function () {
     document.getElementById('sliderView').scrollLeft -= 290;
 };
-const slideLeftMobile = document.getElementById('slideLeftMobile');
-const slideRightMobile = document.getElementById('slideRightMobile');
 
 slideRightMobile.onclick = function () {
     document.getElementById('sliderView').scrollLeft += 290;
@@ -141,8 +137,7 @@ slideRightMobile.onclick = function () {
 slideLeftMobile.onclick = function () {
     document.getElementById('sliderView').scrollLeft -= 290;
 };
-var element = document.getElementById('overlay');
-var element_two = document.querySelector('.slide-popup')
+
 
 function return_menu() {
     element.classList.remove("active");
@@ -151,8 +146,7 @@ function return_menu() {
 }
 
 
-const burgerMenu = document.getElementById('burgerLogo');
-const burgerLogo = document.querySelector('.burger-title-box')
+
 burgerMenu.onclick = function () {
     document.querySelector('.burger').classList.add('active');
     element.classList.add("active");
@@ -161,7 +155,7 @@ burgerMenu.onclick = function () {
     body.style.overflow = "hidden"
 
 }
-const burgerExit = document.getElementById('burger-exit-menu')
+
 burgerExit.onclick = function () {
     document.querySelector('.burger').classList.remove('active');
     element.classList.remove("active");

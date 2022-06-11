@@ -7,7 +7,6 @@ const pagination_page = document.getElementById("pagination-page")
 
 let bigData = []
 var element = document.getElementById('overlay');
-var element_two = document.querySelector('.slider-popup')
 
 burgerMenu.onclick = function () {
     document.querySelector('.burger').classList.add('active');
@@ -62,16 +61,49 @@ function randomNumberArr(list) {
     return arr
 }
 function randomnumbers() {
-    arr = [0,1,2,3,4,5,6,7]
+    if( window.screen.availWidth >= 320) {
+        arr = [0,1,2,3,4,5]
 
+        pet = [
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),]
 
-    pet = [
-        ...randomNumberArr(arr),
-        ...randomNumberArr(arr),
-        ...randomNumberArr(arr),
-        ...randomNumberArr(arr),
-        ...randomNumberArr(arr),
-        ...randomNumberArr(arr),]
+    }
+
+    if( window.screen.availWidth >= 780) {
+
+        arr = [0,1,2,3,4,5]
+
+        pet = [
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),]
+
+    }
+
+    if(window.screen.availWidth >= 1280) {
+
+        arr = [0,1,2,3,4,5,6,7]
+
+        pet = [
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),
+            ...randomNumberArr(arr),]
+    }
 
     return pet
 }
@@ -86,23 +118,16 @@ function paginationDataGenerator(amount, count, data) {
     x = randomnumbers()
     for (let i = 0; i < amount; i++) {
         bigData.push(data[x[i]])
-
     }
     checkdisablebtn();
     if(window.screen.availWidth >= 320) {
         drawpets(0,3)
-        console.log(window.screen.availWidth)
-        console.log(">780")
     }
     if( window.screen.availWidth >= 780) {
         drawpets(0,6)
-        console.log(window.screen.availWidth)
-        console.log("780< x >1280")
     }
     if(window.screen.availWidth >= 1280) {
         drawpets(0,8)
-        console.log(window.screen.availWidth)
-        console.log("1280>")
     }
 }
 const slide_popup = document.querySelector(".slide-popup")
@@ -121,22 +146,15 @@ function drawpets( startCount = 0,count ){
         p.classList.add("slider-view-name");
         btn.classList.add("learn-more", "btn");
         btn.innerHTML = "Learn more";
-
-
         img.src = bigData[i].img;
         p.innerHTML = bigData[i].name;
-
-
         (function (index) {
             btn.addEventListener("click", function () {
-
-
                 body.style.overflow = "hidden"
                 slide_popup.classList.add("active")
                 element.classList.add("active")
 
                 addInfoToPop(index)
-
             })
         })(i);
         div.appendChild(img);
@@ -176,34 +194,11 @@ function return_menu() {
 
 }
 
-
-
-
-// function getRandomNumberBetweenPag(min, max) {
-//     let liss = []
-//     number = Math.floor(Math.random() * (max - min + 1) + min);
-//
-//     if (!liss.includes(number)) {
-//         liss.push(number)
-//         return number;
-//     } else {
-//         if (liss.length <= max) {
-//             return getRandomNumberBetween(min, max)
-//         } else {
-//
-//             liss = [];
-//             return false;
-//         }
-//     }
-//
-// }
-
 let startnum = 0
 let lastnum = 8
 
 if (window.screen.availWidth >= 320) {
     lastnum = 3
-    console.log(lastnum, "asdasdas", window.screen.availWidth)
 
 }if (window.screen.availWidth >= 780) {
     lastnum = 6
@@ -215,7 +210,6 @@ if (window.screen.availWidth >= 320) {
 
 function checkdisablebtn() {
     if (lastnum >= bigData.length) {
-        console.log('ss', bigData.length)
         pagination_right_jump.disabled = true;
         pagination_right_full_jump.disabled = true;
         pagination_left_jump.disabled = false;
@@ -226,7 +220,6 @@ function checkdisablebtn() {
         pagination_left_full_jump.classList.add("btn-clickable")
     }
     else if (startnum <= 0) {
-        console.log('dd')
         pagination_left_jump.disabled = true;
         pagination_left_full_jump.disabled = true;
         pagination_right_jump.disabled = false;
@@ -238,7 +231,6 @@ function checkdisablebtn() {
 
     }
     else {
-        console.log('ae')
         pagination_left_jump.disabled = false;
         pagination_left_full_jump.disabled = false;
         pagination_right_jump.disabled = false;
@@ -257,7 +249,6 @@ pagination_right_jump.onclick = function () {
         drawpets(startnum,lastnum)
         checkdisablebtn()
         pagination_page.innerHTML = (lastnum / 8).toString()
-        console.log(lastnum,"ssaa")
         return;
     }
     if (window.screen.availWidth >= 780) {
@@ -266,7 +257,6 @@ pagination_right_jump.onclick = function () {
         drawpets(startnum,lastnum)
         checkdisablebtn()
         pagination_page.innerHTML = (lastnum / 6).toString()
-        console.log(lastnum,"6saa")
         return;
     }
     if (window.screen.availWidth >= 320) {
@@ -275,7 +265,6 @@ pagination_right_jump.onclick = function () {
         drawpets(startnum,lastnum)
         checkdisablebtn()
         pagination_page.innerHTML = (lastnum / 3).toString()
-        console.log(lastnum,"3saa")
         return;
     }
 
@@ -333,7 +322,6 @@ pagination_left_jump.onclick = function () {
         drawpets(startnum,lastnum)
         checkdisablebtn()
         pagination_page.innerHTML = (lastnum / 3).toString()
-        console.log(lastnum,"4saa")
         return;
     }
 
